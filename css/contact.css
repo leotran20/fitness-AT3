@@ -1,0 +1,278 @@
+@import "style.css";
+
+#contact {
+    width: 100%;
+    z-index: 0;
+    display: grid;
+    grid-template: 100vh repeat(2, max-content) / 1fr;
+}
+
+#contact > video {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+#contact > .title-section {
+    justify-content: center;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+#contact > .background-ambient {
+    background-color: var(--secondary-color);
+    grid-area: 1 / 1 / 4 / 2;
+    opacity: 0.1;
+    transition: opacity 50ms linear;
+}
+
+#contact h3 strong {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+#contact > form {
+    z-index: 0;
+    grid-area: 2 / 1 / 3/ 2;
+    display: grid;
+    grid-template: repeat(6, max-content) / 1fr;
+    padding: 0 var(--side-spacing);
+    margin-bottom: 10rem;
+}
+
+#contact > form label, #contact > form .form-control:not([required]) {
+    display: none;
+}
+
+#contact > form .form-control {
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--primary-color);
+    background-color: var(--secondary-color-with-alpha);
+    border: 1px solid var(--secondary-color-2);
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    margin: .5rem 0;
+}
+
+#contact .group-control, #contact .group-control.form-control {
+    position: relative;
+    border: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+}
+
+#contact .group-control > .form-control {
+    padding-left: 40px;
+}
+
+#contact > form .group-control i {
+    position: absolute;
+    left: 2px;
+    top: 10px;
+    padding: 9px 8px;
+    transition: 0.3s;
+}
+
+#contact > form .group-control.icon-right > .form-control {
+    padding-left: .75rem;
+}
+
+#contact > form .group-control.icon-right i {
+    left: unset;
+    right: 0;
+}
+
+#contact > form .form-control:focus, #contact > form .form-control:active {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+#contact > form .group-control .form-control:focus + i, #contact > form input[type="radio"].form-control:active + label, #contact > form input[type="checkbox"].form-control:active + label {
+    color: var(--primary-color);
+}
+
+#contact > form select:focus + i {
+    transform: rotate(90deg);
+}
+
+form h3, form p {
+    text-align: center;
+}
+
+#contact > form section p:last-of-type {
+    display: none;
+}
+
+#contact > form section p:last-of-type a {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+#contact > form fieldset.form-control {
+    background-color: transparent;
+    border: none;
+}
+
+#contact > form fieldset.form-control label:not(:last-of-type) {
+    margin-right: 3rem;
+}
+
+#contact > form input[type="radio"] + label, #contact > form input[type="checkbox"] + label {
+    display: inline-block;
+}
+
+#contact > form .group-control i, #contact > form input[type="radio"] + label, #contact > form input[type="checkbox"] + label {
+    color: var(--white-color);
+}
+
+#contact-detail {
+    grid-area: 3 / 1 / 3 / 2;
+    z-index: 0;
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr;
+    grid-auto-flow: column;
+    row-gap: 2rem;
+    margin-bottom: 10rem;
+    padding: 0 var(--side-spacing);
+}
+
+#contact-detail > article {
+    text-align: center;
+    background-color: var(--secondary-color-with-alpha);
+    padding: 1rem;
+}
+
+#contact-detail > article, #contact-detail > iframe {
+    border-radius: .25rem;
+    width: 100%;
+    height: 100%;
+}
+
+#contact-detail .info li:not(:last-child) {
+    margin-bottom: 0.5rem;
+}
+
+#contact-detail .info > ul > li:last-child {
+    margin-top: 1rem;
+}
+
+#contact-detail .info li:last-child .social {
+    margin-top: 0.5rem;
+    justify-content: center;
+}
+
+#contact-detail .info li:last-child .social a {
+    color: var(--white-color);
+}
+
+#contact-detail label {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+#contact-detail .address-list {
+    padding-left: 2rem;
+}
+
+#contact-detail i {
+    margin-right: 0.5rem;
+}
+
+#helpModal {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+
+#helpModal video {
+    width: 65%;
+    transform: scale(0);
+    transition: transform 0.1s ease-in-out;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #contact-detail {
+        grid-template: repeat(2, max-content) / 1fr 1fr;
+        column-gap: 2rem;
+    }
+
+    #contact-detail > iframe {
+        grid-area: 1 / 2 / 3 / 2;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #contact > form label, #contact > form .form-control:not([required]) {
+        display: unset;
+    }
+
+    #contact > form {
+        grid-template: repeat(14, max-content) / 1fr 1fr;
+        grid-auto-flow: column;
+        column-gap: 2rem;
+        margin-bottom: 10rem;
+    }
+
+    #contact > form, #contact-detail {
+        max-width: 1300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #contact > form > section {
+        grid-area: 1 / 1 / 15 /2;
+        align-self: center;
+        padding: 2rem;
+        background-image: url("/images/woman-1284656_1920.jpg");
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        z-index: 0;
+    }
+
+    #contact > form > section:before {
+        position: absolute; /* To create an overlay effect to the background image, in order to highlight the text */
+        display: block;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.7;
+        background-color: var(--secondary-color);
+    }
+
+    #contact > form > *:not(:first-child) {
+        grid-column: 2 / span 1;
+    }
+
+    #contact > form section p:last-of-type {
+        display: block;
+    }
+
+
+}

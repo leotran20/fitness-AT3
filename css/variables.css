@@ -1,0 +1,63 @@
+:root {
+    /* color variables */
+    --primary-color: #FFD60A;
+    --primary-color-2: #FFDD33;
+    --secondary-color: #0A0A0B;
+    --secondary-color-2: #131315;
+    --secondary-color-3: #1D1D20;
+    --secondary-color-with-alpha: #1d1d20e6;
+    --accent-color: #003566;
+    --white-color: #F4F4F5;
+
+    /* spacing variables */
+    --navbar-height: 50px;
+    --side-spacing: 1rem;
+
+    /* font sizes */
+    --title-size: 3rem;
+    --heading-size-1: 2.5rem;
+    --heading-size-2: 2rem;
+    --heading-size-3: 1.2rem;
+    --paragraph-size: 1rem;
+}
+
+
+/* Above styles are for X-Small devices (portrait phones, less than 576px) */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    :root {
+        --side-spacing: 2rem;
+    }
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    :root {
+        --side-spacing: 3rem;
+
+
+        --title-size: 4rem;
+        --heading-size-1: 3rem;
+        --heading-size-2: 2.5rem;
+        --heading-size-3: 1.75rem;
+        --paragraph-size: 1.1rem;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+
+}

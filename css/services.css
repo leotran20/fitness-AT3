@@ -1,0 +1,95 @@
+@import "style.css";
+
+#services {
+    margin-top: calc(var(--navbar-height) + 2rem);
+    width: 100vw;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, var(--secondary-color) 99.4%);
+}
+
+#services > p {
+    padding: 0 var(--side-spacing);
+    text-align: center;
+}
+
+.content-container {
+    display: grid;
+    grid-template: repeat(3, max-content) / max(100%);
+    grid-auto-flow: column;
+    margin-top: 2rem;
+    gap: 5px 5px;
+}
+
+.content-container > .overlay-background {
+    grid-column: 1 / span 1;
+}
+
+.content-container > img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-column: 1 / span 1;
+}
+
+.content-container > img:nth-of-type(1), .content-container > img:nth-of-type(1) + .overlay-background {
+    grid-row: 1 / span 1;
+}
+
+.content-container > img:nth-of-type(2), .content-container > img:nth-of-type(2) + .overlay-background {
+    grid-row: 2 / span 1;
+}
+
+.content-container > img:nth-of-type(3), .content-container > img:nth-of-type(3) + .overlay-background {
+    grid-row: 3 / span 1;
+}
+
+.content-container > article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    line-height: 1.25;
+    text-align: center;
+    grid-column: 1 / span 1;
+    z-index: 0;
+}
+
+.content-container > article:nth-of-type(1) {
+    grid-row: 1 / span 1;
+}
+
+.content-container > article:nth-of-type(2) {
+    grid-row: 2 / span 1;
+}
+
+.content-container > article:nth-of-type(3) {
+    grid-row: 3 / span 1;
+}
+
+.content-container > article > h4 {
+    color: var(--primary-color);
+}
+
+
+@media (min-width: 992px) {
+    .content-container {
+        grid-template: repeat(3, 1fr) / 1fr 1fr;
+        gap: 0;
+    }
+
+    .content-container > img:nth-of-type(n), .content-container > img:nth-of-type(n) + .overlay-background {
+        grid-column: 1 / span 2;
+        max-height: 45rem;
+        width: 100%;
+    }
+
+    .content-container > article {
+        grid-column: 2 / span 1;
+        padding: 5rem;
+        mix-blend-mode: screen;
+    }
+
+    .content-container > article:nth-of-type(1) {
+        grid-column: 1 / span 1;
+    }
+}

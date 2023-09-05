@@ -1,0 +1,178 @@
+<!doctype html>
+<html class="no-js" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="description" content="Contact HL Strength">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/contact.css">
+
+    <title>Contact Us</title>
+
+    <!--    import icons -->
+    <script src="https://kit.fontawesome.com/467e29796a.js" crossorigin="anonymous"></script>
+
+    <!--    Import Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="/js/script.js" type="text/javascript"></script>
+</head>
+<body>
+<main>
+    <section id="contact">
+
+        <video class="background-video" autoplay loop muted>
+            <source src="/images/pexels-tima-miroshnichenko-5319099%20(2160p).mp4" type="video/mp4">
+        </video>
+
+        <div class="background-ambient"></div>
+
+        <section class="title-section">
+            <h2>Contact Us</h2>
+
+            <hr/>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus in neque obcaecati. Asperiores delectus
+                eius mollitia nobis, perspiciatis repellat soluta.</p>
+        </section>
+
+        <form onsubmit="return false;">
+            <section>
+                <h3>Get In <strong>Touch</strong></h3>
+                <p>We're here to assist you 24/7. Whether you have questions, feedback, or simply want to get in touch,
+                    our team is ready to help. Fill out the form below, and we'll respond promptly to assist you on your
+                    fitness journey.</p>
+                <p>If you require assistance or have any questions, please don't hesitate to reach out to us by clicking
+                    <a id="helpLink" href="#">here</a>, and we'll be happy to help.</p>
+            </section>
+
+            <label for="name">Name</label>
+            <fieldset class="group-control">
+                <input type="text" id="name" placeholder="Full Name" class="form-control" required>
+                <i class="fa-solid fa-user"></i>
+                <span class="error" id="nameError"></span>
+            </fieldset>
+
+            <label for="phone">Phone</label>
+            <fieldset class="group-control">
+                <input type="text" id="phone" placeholder="Phone Number" class="form-control" pattern="[0-9]{10}"
+                       title="Please enter a valid 10-digit phone number" required>
+                <i class="fa-solid fa-phone"></i>
+                <span class="error" id="phoneError"></span>
+            </fieldset>
+
+            <label for="email">Email</label>
+            <fieldset class="group-control">
+                <input type="email" id="email" placeholder="Email Address" class="form-control" required>
+                <i class="fa-solid fa-envelope"></i>
+                <span class="error" id="emailError"></span>
+            </fieldset>
+
+            <label for="message">Message</label>
+            <div>
+                <textarea rows="3" id="message" placeholder="Message" class="form-control" required></textarea>
+                <span class="error" id="messageError"></span>
+            </div>
+
+            <label for="subject">Subject</label>
+            <fieldset class="group-control form-control icon-right">
+                <select name="subject" id="subject" class="form-control">
+                    <option value="General Inquiry">General Inquiry</option>
+                    <option value="Membership Information">Membership Information</option>
+                    <option value="Personal Training">Personal Training</option>
+                    <option value="Group Fitness Classes">Group Fitness Classes</option>
+                    <option value="Feedback and Suggestions">Feedback and Suggestions</option>
+                </select>
+                <i class="fa-solid fa-circle-arrow-down"></i>
+            </fieldset>
+
+            <label>Gender</label>
+            <fieldset class="form-control">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </fieldset>
+
+            <fieldset class="form-control">
+                <input type="checkbox" id="subscribe">
+                <label for="subscribe">Subscribe to Our Newsletters</label>
+            </fieldset>
+
+            <button type="submit" class="btn primary-btn">Submit</button>
+        </form>
+
+        <section id="contact-detail">
+            <article>
+                <h3>Our <strong>Working</strong> Hours</h3>
+                <p>We are open 24/7. You can now train any time you like, weekdays, weekends & public holidays. WE ARE
+                    OPEN! Unlike other so called 24/7 gyms, we are staffed all the time. If you need a late night
+                    workout, a protein bar or shake, supplements or a cool t-shirt, we are open for you. Our class times
+                    change constantly so check out on the website for the timetable at each of our clubs.</p>
+            </article>
+
+            <article class="info">
+                <h3>Our <strong>Contact</strong> Info</h3>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <label>Visit Our Club Locations</label>
+                        <ul class="address-list">
+                            <li><p><strong>Ashgrove Club:</strong> 123 Oak Street, Ashgrove, QLD 4060</p></li>
+                            <li><p><strong>Brisbane City:</strong> 456 Riverside Avenue, Brisbane City, QLD 4000</p>
+                            </li>
+                            <li><p><strong>Chermside Club:</strong> 789 Maple Lane, Chermside, QLD 4032</p></li>
+                            <li><p><strong>Graceville Club:</strong> 101 Elm Street, Graceville, QLD 4075</p></li>
+                            <li><p><strong>Westlake Club:</strong> 555 Pine Road, Westlake, QLD 4060</p></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:(+61)432432432">(+61) 0432432432</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:support@hlstrength.com.au">support@hlstrength.com.au</a>
+                    </li>
+                    <li>
+                        <label>Follow Us</label>
+                        <ul class="social">
+                            <li>
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21767.340847802785!2d153.02450795079415!3d-27.460521128066326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a046772eba1%3A0xc4309d68b2891ecc!2sSnap%20Fitness%2024%2F7%20Brisbane%20City!5e0!3m2!1sen!2sau!4v1693733065745!5m2!1sen!2sau"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+    </section>
+
+    <div id="helpModal">
+        <video autoplay loop muted>
+            <label>[Tutorial] How to fill the form properly</label>
+            <source src="/images/pexels_videos_2278095%20(1080p).mp4" type="video/mp4">
+        </video>
+
+    </div>
+</main>
+</body>
+</html>
