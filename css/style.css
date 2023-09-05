@@ -41,6 +41,10 @@ p {
     line-height: 1.5;
 }
 
+a {
+    color: var(--primary-color-2);
+}
+
 main {
     display: flex;
     justify-content: center;

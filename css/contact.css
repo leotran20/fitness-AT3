@@ -71,7 +71,7 @@
     padding-left: 40px;
 }
 
-#contact > form .group-control i {
+#contact > form .group-control span {
     position: absolute;
     left: 2px;
     top: 10px;
@@ -83,7 +83,7 @@
     padding-left: .75rem;
 }
 
-#contact > form .group-control.icon-right i {
+#contact > form .group-control.icon-right span {
     left: unset;
     right: 0;
 }
@@ -93,11 +93,11 @@
     outline: none;
 }
 
-#contact > form .group-control .form-control:focus + i, #contact > form input[type="radio"].form-control:active + label, #contact > form input[type="checkbox"].form-control:active + label {
+#contact > form .group-control .form-control:focus + span, #contact > form input[type="radio"].form-control:active + label, #contact > form input[type="checkbox"].form-control:active + label {
     color: var(--primary-color);
 }
 
-#contact > form select:focus + i {
+#contact > form select:focus + span {
     transform: rotate(90deg);
 }
 
@@ -127,7 +127,7 @@ form h3, form p {
     display: inline-block;
 }
 
-#contact > form .group-control i, #contact > form input[type="radio"] + label, #contact > form input[type="checkbox"] + label {
+#contact > form .group-control span, #contact > form input[type="radio"] + label, #contact > form input[type="checkbox"] + label {
     color: var(--white-color);
 }
 
@@ -180,7 +180,7 @@ form h3, form p {
     padding-left: 2rem;
 }
 
-#contact-detail i {
+#contact-detail span {
     margin-right: 0.5rem;
 }
 
