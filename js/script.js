@@ -40,7 +40,7 @@ $(document).ready(function () {
 
     // the purpose of using this flag is to not flick the modal on/off rapidly, ensure the video lasts at lest 0.5s
     let isDismissible = false;
-    helpLink.hover(function (e) {
+    helpLink.hover(function () {
         helpModal.css({visibility: 'visible'});
         innerVideo.css({transform: 'scale(1)'});
     }, function () {
@@ -52,7 +52,7 @@ $(document).ready(function () {
     });
 
     // detect if pointer moved away from the link
-    helpModal.mousemove(function (e) {
+    helpModal.mousemove(function () {
 
         if (isDismissible) {
             innerVideo.removeAttr('style');
