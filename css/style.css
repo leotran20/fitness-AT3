@@ -155,6 +155,11 @@ main > section > .title-section {
     border: none;
 }
 
+.content-container article h3 {
+    font-size: var(--heading-size-3);;
+}
+
+
 /* styles for navigation bar */
 
 #top-nav {
