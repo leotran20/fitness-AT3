@@ -18,6 +18,10 @@ $(document).ready(function () {
         window.location.href = '/html/contact.html';
     });
 
+    $('#learn-more-button').click(function () {
+        window.location.href = '/html/classes.html';
+    });
+
     $('body').scroll(function () {
         const maxVisibleHeight = 500;
         const steps = 20
