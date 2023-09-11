@@ -145,7 +145,7 @@ main > section > .title-section {
 }
 
 
-.btn:after {
+.btn::after {
     content: "";
     width: 100%;
     z-index: -1;
@@ -159,7 +159,7 @@ main > section > .title-section {
     border-radius: 0.25rem;
 }
 
-.btn:hover:after {
+.btn:hover::after {
     top: 0;
     left: 0;
 }

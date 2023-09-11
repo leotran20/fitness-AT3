@@ -50,33 +50,32 @@
                     <a id="helpLink" href="#" title="help">here</a>, and we'll be happy to help.</p>
             </section>
 
-            <label for="name">Name</label>
+            <label class="required" for="name">Name</label>
             <fieldset class="group-control">
                 <input type="text" id="name" placeholder="Full Name" class="form-control" required>
                 <span class="fa-solid fa-user"></span>
-                <span class="error" id="nameError"></span>
+                <div class="error">Name is required</div>
             </fieldset>
 
-            <label for="phone">Phone</label>
+            <label class="required" for="phone">Phone</label>
             <fieldset class="group-control">
-                <input type="text" id="phone" placeholder="Phone Number" class="form-control" pattern="[0-9]{10}"
-                       title="Please enter a valid 10-digit phone number" required>
+                <input type="text" id="phone" placeholder="Phone Number" class="form-control" pattern="[0-9]{10}" required>
                 <span class="fa-solid fa-phone"></span>
-                <span class="error" id="phoneError"></span>
+                <div class="error">Please enter a valid 10-digit phone number</div>
             </fieldset>
 
-            <label for="email">Email</label>
+            <label class="required" for="email">Email</label>
             <fieldset class="group-control">
                 <input type="email" id="email" placeholder="Email Address" class="form-control" required>
                 <span class="fa-solid fa-envelope"></span>
-                <span class="error" id="emailError"></span>
+                <div class="error">Please enter valid email</div>
             </fieldset>
 
-            <label for="message">Message</label>
-            <div>
+            <label class="required" for="message">Message</label>
+            <fieldset class="group-control">
                 <textarea rows="3" id="message" placeholder="Message" class="form-control" required></textarea>
-                <span class="error" id="messageError"></span>
-            </div>
+                <div class="error">Please enter your message</div>
+            </fieldset>
 
             <label for="subject">Subject</label>
             <fieldset class="group-control form-control icon-right">
