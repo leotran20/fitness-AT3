@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <link rel="icon" href="/favicon.ico">
-    <meta name="description" content="Contact HL Strength">
+    <meta name="description" content="Contact ML Strength">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/contact.css">
 
@@ -51,23 +51,20 @@
             </section>
 
             <label class="required" for="name">Name</label>
-            <fieldset class="group-control">
+            <fieldset class="group-control icon fa-user">
                 <input type="text" id="name" placeholder="Full Name" class="form-control" required>
-                <span class="fa-solid fa-user"></span>
                 <div class="error">Name is required</div>
             </fieldset>
 
             <label class="required" for="phone">Phone</label>
-            <fieldset class="group-control">
+            <fieldset class="group-control icon fa-phone">
                 <input type="text" id="phone" placeholder="Phone Number" class="form-control" pattern="[0-9]{10}" required>
-                <span class="fa-solid fa-phone"></span>
                 <div class="error">Please enter a valid 10-digit phone number</div>
             </fieldset>
 
             <label class="required" for="email">Email</label>
-            <fieldset class="group-control">
+            <fieldset class="group-control icon fa-envelope">
                 <input type="email" id="email" placeholder="Email Address" class="form-control" required>
-                <span class="fa-solid fa-envelope"></span>
                 <div class="error">Please enter valid email</div>
             </fieldset>
 
@@ -78,7 +75,7 @@
             </fieldset>
 
             <label for="subject">Subject</label>
-            <fieldset class="group-control form-control icon-right">
+            <fieldset class="group-control form-control icon fa-circle-arrow-down icon-right">
                 <select name="subject" id="subject" class="form-control">
                     <option value="General Inquiry">General Inquiry</option>
                     <option value="Membership Information">Membership Information</option>
@@ -86,7 +83,6 @@
                     <option value="Group Fitness Classes">Group Fitness Classes</option>
                     <option value="Feedback and Suggestions">Feedback and Suggestions</option>
                 </select>
-                <span class="fa-solid fa-circle-arrow-down"></span>
             </fieldset>
 
             <label>Gender</label>

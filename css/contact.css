@@ -109,27 +109,36 @@
     border: none;
     padding: 0;
     margin: 0 0 1rem 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
 }
 
 #contact .group-control > input.form-control {
     padding-left: 40px;
 }
 
-#contact > form .group-control span {
+#contact > form .group-control.icon::before {
     position: absolute;
     left: 2px;
     top: 10px;
     padding: 9px 8px;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
+    font-family: "Font Awesome 6 Free";
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+    font-weight: 900;
 }
 
 #contact > form .group-control.icon-right > .form-control {
     padding-left: .75rem;
 }
 
-#contact > form .group-control.icon-right span {
+#contact > form .group-control.icon-right::before {
     left: unset;
     right: 0;
 }
@@ -139,7 +148,7 @@
     outline: none;
 }
 
-#contact > form .group-control .form-control:focus + span, #contact > form input[type="radio"].form-control:active + label, #contact > form input[type="checkbox"].form-control:active + label {
+#contact > form .group-control.icon:has(> .form-control:focus)::before, #contact > form input[type="radio"].form-control:active + label, #contact > form input[type="checkbox"].form-control:active + label {
     color: var(--primary-color);
 }
 
@@ -148,7 +157,7 @@
     color: var(--red-color);
 }
 
-#contact > form select:focus + span {
+#contact > form .icon:has(> select:focus)::before {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
@@ -180,7 +189,7 @@ form h3, form p {
     display: inline-block;
 }
 
-#contact > form .group-control span, #contact > form input[type="radio"] + label, #contact > form input[type="checkbox"] + label {
+#contact > form .group-control .icon::before, #contact > form input[type="radio"] + label, #contact > form input[type="checkbox"] + label {
     color: var(--white-color);
 }
 
