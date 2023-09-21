@@ -1,6 +1,7 @@
 :root {
     /* color variables */
-    --primary-color: #FFD60A;
+    --primary-color: #ffd60a;
+    --primary-color-with-alpha: #FFD60ACC;
     --primary-color-2: #FFDD33;
     --secondary-color: #0A0A0B;
     --secondary-color-2: #131315;

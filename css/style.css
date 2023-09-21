@@ -458,8 +458,6 @@ footer {
     background-color: var(--secondary-color-3);
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: (auto) [ 4 ];
-    -ms-grid-columns: 1fr;
     grid-template: repeat(4, auto) / 1fr;
 }
 
@@ -592,7 +590,7 @@ footer {
 
 #homepage .content h1 strong {
     padding: 1px 2px;
-    background-color: color-mix(in srgb, var(--primary-color), transparent 20%);
+    background-color: var(--primary-color-with-alpha);
     color: var(--secondary-color);
 }
 
@@ -835,8 +833,6 @@ footer {
     z-index: 0;
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: 100vh (-webkit-max-content) [ 2 ];
-    -ms-grid-rows: 100vh (max-content) [ 2 ];
     -ms-grid-columns: 1fr;
     grid-template: 100vh repeat(2, -webkit-max-content) / 1fr;
     grid-template: 100vh repeat(2, max-content) / 1fr;
@@ -893,8 +889,6 @@ footer {
     grid-area: 2 / 1 / 3/ 2;
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: (-webkit-max-content) [ 6 ];
-    -ms-grid-rows: (max-content) [ 6 ];
     -ms-grid-columns: 1fr;
     grid-template: repeat(6, -webkit-max-content) / 1fr;
     grid-template: repeat(6, max-content) / 1fr;
@@ -1154,8 +1148,6 @@ form h3, form p {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     #about .content-container {
-        -ms-grid-rows: (-webkit-max-content) [ 4 ];
-        -ms-grid-rows: (max-content) [ 4 ];
         -ms-grid-columns: 1fr 1fr;
         grid-template: repeat(4, -webkit-max-content) / 1fr 1fr;
         grid-template: repeat(4, max-content) / 1fr 1fr;
@@ -1235,8 +1227,6 @@ form h3, form p {
     }
 
     #contact-detail {
-        -ms-grid-rows: (-webkit-max-content) [ 2 ];
-        -ms-grid-rows: (max-content) [ 2 ];
         -ms-grid-columns: 1fr 2rem 1fr;
         grid-template: repeat(2, -webkit-max-content) / 1fr 1fr;
         grid-template: repeat(2, max-content) / 1fr 1fr;
@@ -1256,8 +1246,6 @@ form h3, form p {
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     #about .content-container {
-        -ms-grid-rows: (1fr) [ 3 ];
-        -ms-grid-columns: (1fr) [ 3 ];
         grid-template: repeat(3, 1fr) / repeat(3, 1fr);
         grid-auto-flow: row;
     }
@@ -1267,8 +1255,6 @@ form h3, form p {
     }
 
     #contact > form {
-        -ms-grid-rows: (-webkit-max-content) [ 14 ];
-        -ms-grid-rows: (max-content) [ 14 ];
         -ms-grid-columns: 1fr 2rem 1fr;
         grid-template: repeat(14, -webkit-max-content) / 1fr 1fr;
         grid-template: repeat(14, max-content) / 1fr 1fr;
@@ -1343,7 +1329,6 @@ form h3, form p {
 @media (min-width: 1400px) {
     #about .content-container {
         -ms-grid-rows: 1fr 1fr;
-        -ms-grid-columns: (1fr) [ 4 ];
         grid-template: 1fr 1fr / repeat(4, 1fr);
         grid-auto-flow: column;
         max-width: 1700px;
