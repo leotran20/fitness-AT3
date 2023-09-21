@@ -527,7 +527,6 @@ footer {
     height: 100vh;
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: (1fr) [ 3 ];
     -ms-grid-columns: 1fr 15fr 1fr;
     grid-template: repeat(3, 1fr) / 1fr 15fr 1fr;
 }
